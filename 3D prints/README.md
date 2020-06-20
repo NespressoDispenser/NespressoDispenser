@@ -5,7 +5,7 @@ This folder contain all the files of the 3D printed parts. Each folder contains 
 - Picture (.png/.JPEG)
 
 # Printing
-The slicer software used is "Cura V4.6", printing parameters will change upon the printing machine and won't be mentionned.
+The slicer software used is *Cura V4.6*, printing parameters will change upon the printing machine and won't be mentionned.
 All impressions are made of PLA
 
 # Modelling
