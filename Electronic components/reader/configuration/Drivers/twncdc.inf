@@ -1,0 +1,67 @@
+[Version]
+Signature="$Windows NT$"
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
+Provider=%PRVDR%
+CatalogFile=twncdc.cat
+DriverVer=06/20/2018,5.3.0.27
+
+[SourceDisksNames]
+1=%DriversDisk%,,,
+3426=windows cd
+
+[SourceDisksFiles]
+
+[Manufacturer]
+%MFGNAME%=DeviceList,NT,NTamd64
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+;------------------------------------------------------------------------------
+;            VID/PID Settings
+;------------------------------------------------------------------------------
+[DeviceList.NT]
+%DESCRIPTION%=DriverInstall,USB\VID_09D8&PID_0320
+%DESCRIPTION%=DriverInstall,USB\VID_09D8&PID_0420
+%DESCRIPTION%=DriverInstall,USB\VID_09D8&PID_0427&MI_01
+
+[DeviceList.NTamd64]
+%DESCRIPTION%=DriverInstall,USB\VID_09D8&PID_0320
+%DESCRIPTION%=DriverInstall,USB\VID_09D8&PID_0420
+%DESCRIPTION%=DriverInstall,USB\VID_09D8&PID_0427&MI_01
+
+[DriverInstall.NT]
+Include=mdmcpq.inf
+CopyFiles=FakeModemCopyFileSection
+AddReg=DriverInstall.NT.AddReg
+
+
+[FakeModemCopyFileSection]
+
+[DriverInstall.NT.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,usbser.sys
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[DriverInstall.NT.Services]
+AddService=usbser, 0x00000002, DriverServiceInst
+
+[DriverServiceInst]
+DisplayName=%SERVICE%
+ServiceType = 1 ; SERVICE_KERNEL_DRIVER
+StartType = 3 ; SERVICE_DEMAND_START
+ErrorControl = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary= %12%\usbser.sys
+LoadOrderGroup = Base
+
+;------------------------------------------------------------------------------
+;              String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+PRVDR = "Elatec"
+MFGNAME = "Elatec"
+DESCRIPTION = "Serial RFID Device"
+SERVICE = "usbser"
+DriversDisk = "Elatec Drivers" 
