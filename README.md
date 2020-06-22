@@ -4,7 +4,9 @@ HEIG-VD semester project
 
 # contact
 HEIG-VD
+
 https://heig-vd.ch/
+
 Nespresso.Dispenser@gmail.com
 
 
