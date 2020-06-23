@@ -6,7 +6,7 @@ The list mentions the number of each piece printed for the project. The number o
 - 4x arduino mega mounting
 - 1x door lock (each part)
 - 1x elactec reader mounting (each part)
-- 2x encoding lung reader
+- 2x encoding lug reader
 - 4x inductive sensor mounting
 - 2x motor coupling SG92
 - 2x motor mounting
