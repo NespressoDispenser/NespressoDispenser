@@ -1,6 +1,2 @@
 # Description
-Complete development pack available here: http://elatec.com/devpack322
-# AppBlaster.exe
-Software use to program and unpload a new firmware
-# Director.exe
-USB communication and dumping program
+These are the main documents to implement the Elatec reader. The complete development pack is available here: http://elatec.com/devpack322
