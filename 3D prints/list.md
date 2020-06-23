@@ -1,6 +1,6 @@
 # Description
 The list mentions the number of each piece printed for the project. The number of 3D prints may be different depending on your design choice.
-# 3D parts:
+# 3D parts
 - 1x LCD mounting
 - 4x SD module spacer
 - 4x arduino mega mounting
