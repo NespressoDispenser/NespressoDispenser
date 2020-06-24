@@ -9,7 +9,7 @@ The slicer software used is *Cura V4.6*, printing parameters will change upon th
 All impressions are made of PLA
 
 # Modelling
-All parts have been modelised with *Solidworks 2018* V.......
+All parts have been modelised with *Solidworks 2018 SP5.0* 
 
 # Render
 A picture of each modelised parts 
