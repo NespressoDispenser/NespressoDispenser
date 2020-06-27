@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+  <dpinst>
+    <enableNotListedLanguages>
+<!-- Setting configuration flags -->
+	<language code="0x401"> child elements </language>
+	<language code="0x804"> child elements </language>
+	<language code="0x404"> child elements </language>
+	<language code="0x405"> child elements </language>
+	<language code="0x406"> child elements </language>
+	<language code="0x407"> child elements </language>
+	<language code="0x408"> child elements </language>
+	<language code="0x409"> child elements </language>
+	<language code="0xC0A"> child elements </language>
+	<language code="0x40B"> child elements </language>
+	<language code="0x40C"> child elements </language>
+	<language code="0x40D"> child elements </language>
+	<language code="0x40E"> child elements </language>
+	<language code="0x410"> child elements </language>
+	<language code="0x411"> child elements </language>
+	<language code="0x412"> child elements </language>
+	<language code="0x413"> child elements </language>
+	<language code="0x414"> child elements </language>
+	<language code="0x415"> child elements </language>
+	<language code="0x416"> child elements </language>
+	<language code="0x816"> child elements </language>
+	<language code="0x419"> child elements </language>
+	<language code="0x41D"> child elements </language>
+	<language code="0x41F"> child elements </language>
+<!-- The following search and subDirectory elements direct
+     DPInst to search all subdirectories (under the DPInst working directory) to locate driver
+     packages. -->
+    <search>
+      <subDirectory>*</subDirectory>
+</search>
+<!-- The following three elements customize, but do not localize,
+     the icon and bitmaps that appear on the DPInst wizard pages. -->
+    <icon>Data\Eula.ico</icon>
+ <headerPath>Data\Header.bmp</headerPath>
+    <watermarkPath>Data\Watermark.bmp</watermarkPath>
+
+  </dpinst>
