@@ -168,7 +168,7 @@ void loop()
         LCD.setCursor(LINE_TWO);
         LCD.print("Carte SVP");
         cancel_active = false;
-        state_machine = COLOR_LED;
+        state_machine = TURN_OFF_LED;
       }
       else
       {
@@ -281,9 +281,9 @@ void loop()
       if (active_user.get_id(3) == user2.get_id(3)) {
         user2.set_solde(active_user.get_solde());
       }
-      state_machine = CATCHING_CAPSULE;
+      state_machine = DROPPING_CAPSULE;
       break;
-    case CATCHING_CAPSULE :
+    case DROPPING_CAPSULE :
       display(state_machine, LCD);
       if (choice_1_active or choice_2_active)
       {
@@ -316,9 +316,9 @@ void loop()
         }
       }
       delay(DISPLAY_TIME);
-      state_machine = DROPPING_CAPSULE;
+      state_machine = CAPSULE_DROPPED;
       break;
-    case DROPPING_CAPSULE :
+    case CAPSULE_DROPPED :
       display(state_machine, LCD);
       if (choice_1_active or choice_2_active)
       {
@@ -339,9 +339,9 @@ void loop()
         choice_3_active = false;
         choice_4_active = false;
       }
-      state_machine = COLOR_LED;
+      state_machine = TURN_OFF_LED;
       break;
-    case  COLOR_LED:
+    case  TURN_OFF_LED:
       turn_off_light(strip_leds);
       active_user.logout();
       leds_capsules(strip_leds, capsule_1, CRGB::Black);
